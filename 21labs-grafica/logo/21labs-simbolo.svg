@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FB3C2"/><stop offset="1" stop-color="#275B66"/></linearGradient>
+<clipPath id="sc"><rect x="0.00" y="0.00" width="120.00" height="120.00" rx="28.00"/></clipPath>
+<clipPath id="sh"><rect x="0.00" y="0.00" width="120.00" height="80.00"/></clipPath></defs>
+<rect x="0.00" y="0.00" width="120.00" height="120.00" rx="28.00" fill="#201D1C"/>
+<g clip-path="url(#sc)"><circle cx="60.00" cy="80.00" r="40.00" fill="url(#s)" clip-path="url(#sh)"/>
+<path d="M8.00,80.00 C26.00,79.50 38.00,71.00 46.00,63.00 C49.00,60.00 52.00,59.00 54.50,61.00 L57.00,63.50 C59.00,64.60 61.00,64.60 63.00,63.50 L65.50,61.00 C68.00,59.00 71.00,60.00 74.00,63.00 C82.00,71.00 94.00,79.50 112.00,80.00 Z" fill="#201D1C"/>
+<rect x="0.00" y="79.40" width="120.00" height="1.40" fill="#6FB3C2" opacity="0.6"/>
+<rect x="40.00" y="87.00" width="40.00" height="1.60" rx="0.80" fill="#6FB3C2" opacity="0.35"/>
+<rect x="48.00" y="93.00" width="24.00" height="1.60" rx="0.80" fill="#6FB3C2" opacity="0.22"/>
+<rect x="55.00" y="99.00" width="10.00" height="1.60" rx="0.80" fill="#6FB3C2" opacity="0.14"/></g><rect x="0.50" y="0.50" width="119.00" height="119.00" rx="27.50" fill="none" stroke="#F2EDE9" stroke-opacity="0.12"/></svg>
