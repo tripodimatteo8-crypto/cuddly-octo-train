@@ -57,7 +57,6 @@ pagina('biglietto', 85 + 2 * B, 55 + 2 * B, '''
     <div><b>Tel</b><span>+39 347 190 3026</span></div>
     <div><b>Email</b><span>21labsweb@gmail.com</span></div>
     <div><b>Sito</b><span>www.21labs.it</span></div>
-    <div><b>Studio</b><span>Viale Raffaello 15, 80129 Napoli</span></div>
   </div>
   <div class="r-qr qr">{q_big}</div>
   <p class="r-qr-testo">Inquadra e scrivici<br><span class="petrolio">su WhatsApp</span></p>
