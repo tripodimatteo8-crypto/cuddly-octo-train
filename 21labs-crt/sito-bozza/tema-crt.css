@@ -1,0 +1,37 @@
+/* Bozza «CRT»: nero, fosforo verde-acqua, righe di scansione. Si sovrappone al CSS del sito (titoli già in Anton). */
+:root {
+  --nero: #0B0E0E; --tessera: #121717; --rilievo: #1A2121; --testo: #E4EFEA; --grigio: #86999A; --linea: #253031;
+  --azzurro: #7FD0BF; --pillola: #5AB2A7; --petrolio: #2C6E78;
+  --alba: linear-gradient(180deg, #A9DCC6 0%, #5AB2A7 55%, #739CA9 100%);
+}
+body { background: var(--nero); }
+/* righe di scansione leggere su tutta la pagina */
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: .5;
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+.hero { background-image: none !important; }
+.motto { font-size: clamp(48px, 10.5vw, 118px) !important; line-height: .96 !important; letter-spacing: 0 !important;
+  filter: drop-shadow(0 0 18px rgba(127, 208, 191, .45)); }
+.testa h2 { filter: drop-shadow(0 0 14px rgba(127, 208, 191, .25)); }
+.logo span { color: #7FD0BF; }
+.pillola, .scheda[aria-selected="true"] { color: #0B0E0E !important; font-weight: 600; }
+.pillola:hover { background: #7FD0BF !important; }
+.barra { background: rgba(11, 14, 14, .8) !important; }
+/* apertura: il video diventa uno schermo, con righe e bordi sfumati */
+.scena { background: #0B0E0E !important; border-radius: 36px !important; box-shadow: inset 0 0 0 1px rgba(127,208,191,.18), 0 0 60px -20px rgba(90,178,167,.5) !important; }
+.scena-video { filter: hue-rotate(-18deg) saturate(1.15) contrast(1.05); }
+.scena::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,.34) 0 2px, transparent 2px 5px), radial-gradient(120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.75) 100%); }
+.schermo { background: linear-gradient(180deg, #0F1414 0%, #14302F 55%, #2C6E78 100%) !important; }
+.tessera .oggetto, .strumenti-oggetto { filter: hue-rotate(-20deg) saturate(1.1) brightness(1.2) !important; }
+.tessera, .galleria li, .conti, .pannello { box-shadow: inset 0 0 0 1px rgba(127, 208, 191, .09) !important; }
+@media (hover: hover) { .tessera:hover, .galleria li:hover { box-shadow: inset 0 0 0 1px rgba(127, 208, 191, .55), 0 0 40px -14px rgba(90, 178, 167, .7) !important; } }
+.tessera .novita { background: #7FD0BF !important; color: #0B0E0E !important; }
+.m-copertina, .m-tessera, .m-reel { background: linear-gradient(135deg, #121717, #2C6E78 60%, #7FD0BF) !important; }
+.m-bollini i.pieno { background: #7FD0BF !important; }
+.incluso { background: radial-gradient(120% 140% at 100% 100%, #91C4AE 0%, #5AB2A7 20%, #2C6E78 45%, #14302F 70%, #0B0E0E 100%) !important; }
+.esito .grande { color: #A9DCC6 !important; filter: drop-shadow(0 0 12px rgba(127,208,191,.4)); }
+.campo-s input[type="range"] { accent-color: #7FD0BF !important; }
+.colori label:has(input:checked) { box-shadow: inset 0 0 0 1.5px #7FD0BF !important; }
+.scelta:has(input:checked), .stima-pacchetto { background: rgba(127, 208, 191, .14) !important; }
+:root { --ui-azzurro: #2C8C86; }
+.m-grafico i:last-child, .m-lato i:first-child { background: #5AB2A7 !important; }

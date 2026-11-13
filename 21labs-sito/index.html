@@ -3,10 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>21Labs agenzia web Napoli</title>
-<!-- Matt: quando lo metti su 21labs.it puoi usare un title più lungo, ad esempio
-     "Agenzia web Napoli: siti, e-commerce e gestionali | 21Labs". -->
-<meta name="description" content="21Labs è un'agenzia web di Napoli: siti vetrina da 499 €, e-commerce da 999 €, gestionali su misura da 1.500 €, app e automazioni. Prezzi IVA inclusa, bozza gratuita.">
+<title>Agenzia web Napoli: siti, e-commerce e gestionali | 21Labs</title>
+<meta name="description" content="21Labs, agenzia web a Napoli: siti da 499 €, e-commerce da 999 €, gestionali, automazioni e centralino IA. Prezzo fisso IVA inclusa, bozza gratuita.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://www.21labs.it/">
 <meta name="geo.region" content="IT-NA">
@@ -19,15 +17,20 @@
 <meta property="og:description" content="Siti da 499 €, e-commerce da 999 €, gestionali su misura da 1.500 €. Prezzi IVA inclusa, consulenza e bozza gratuite.">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="https://www.21labs.it/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="21Labs, digital studio a Napoli">
 <meta name="twitter:image" content="https://www.21labs.it/media/og.jpg">
+<meta name="theme-color" content="#121114">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- Google tag (gtag.js): incolla qui lo snippet di Google Ads / Analytics.
      I clic sui link WhatsApp inviano già l'evento "generate_lead" se gtag è presente. -->
 
 <script>document.documentElement.className = 'js';</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="media/font/Michroma-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="media/font/SpaceGrotesk-400.woff" as="font" type="font/woff" crossorigin>
 
 <script type="application/ld+json">
 {
@@ -376,6 +379,14 @@
     },
     {
      "@type": "Question",
+     "name": "Cos'è il centralino IA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "È un assistente con intelligenza artificiale che risponde al telefono al posto tuo quando sei occupato o chiuso: dà orari e informazioni, prende prenotazioni e appuntamenti e ti manda su WhatsApp il riepilogo di ogni chiamata. Parte da 120 € al mese."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Cosa sono le automazioni per un'azienda?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -456,15 +467,15 @@
 :root {
   /* Layout: pagina nera alla Apple. Titoli grandi al centro, tessere grigio scuro con testo a sinistra.
      L'azzurro e l'alba sul Vesuvio portano la città senza nominarla a ogni riga. */
-  --nero: #201D1C;
-  --tessera: #2B2726;
-  --rilievo: #363130;
-  --testo: #F2EDE9;
-  --grigio: #A9A09A;
-  --linea: #433D3A;
-  --azzurro: #6FB3C2;
-  --pillola: #275B66;
-  --alba: linear-gradient(100deg, #3E8796 0%, #8CC6D0 100%);
+  --nero: #121114;
+  --tessera: #1B191C;
+  --rilievo: #262326;
+  --testo: #EDE8E3;
+  --grigio: #9A9497;
+  --linea: #332F32;
+  --azzurro: #F0583E;
+  --pillola: #E8402A;
+  --alba: linear-gradient(100deg, #E02A1C 0%, #EE4A2A 55%, #F2843F 100%);
   --verde-wa: #0E7A43;
   /* le schermate disegnate dentro le tessere restano chiare, come schermate vere */
   --ui-carta: #FFFFFF;
@@ -472,8 +483,8 @@
   --ui-grigio: #6E6E73;
   --ui-velo: #F5F5F7;
   --ui-azzurro: #006BB6;
-  --font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --titoli: "Anton", "Poppins", sans-serif;
+  --font: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --titoli: "Michroma", "Space Grotesk", sans-serif;
   --petrolio: #275B66;
   color-scheme: dark;
 }
@@ -718,6 +729,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .incluso h3 { font-size: clamp(28px, 4.2vw, 44px); }
 .incluso p { margin-top: 12px; color: #D6D6E4; max-width: 30em; }
 .incluso .cifra { font-size: clamp(52px, 9vw, 88px); font-weight: 700; letter-spacing: -0.05em; line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; color: #fff; margin: 0; }
+.incluso .cifra .eur { font-family: "Space Grotesk", sans-serif; font-weight: 500; }
 .incluso .cifra-nota { font-size: 14px; color: #F1E9F3; margin-top: 8px; }
 .incluso .pillola { margin-top: 20px; }
 .incluso :focus-visible { outline-color: #fff; }
@@ -922,6 +934,65 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
   .tessera, .galleria li { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease; }
   .tessera:hover, .galleria li:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px rgba(111, 179, 194, 0.45), 0 24px 50px -28px rgba(39, 91, 102, 0.9); }
 }
+/* ---------- Tema «Termica»: quasi nero, calore rosso con grana, tocco d'azzurro ---------- */
+@font-face { font-family: "Michroma"; src: url(media/font/Michroma-400.woff) format("woff"); font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url(media/font/SpaceGrotesk-400.woff) format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url(media/font/SpaceGrotesk-500.woff) format("woff"); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url(media/font/SpaceGrotesk-700.woff) format("woff"); font-weight: 700; font-display: swap; }
+body { background: var(--nero); }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: .06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .gruppo th, .logo, .strumento h3, .esito .grande, .invito-titolo {
+  font-family: var(--titoli) !important; font-weight: 400 !important; letter-spacing: 0 !important; -webkit-text-stroke: .018em currentColor; }
+.motto { -webkit-text-stroke: 0; font-size: clamp(26px, 5.4vw, 60px) !important; line-height: 1.08 !important; }
+.testa h2 { font-size: clamp(22px, 3.6vw, 38px) !important; line-height: 1.15 !important; }
+.tessera h3 { font-size: clamp(17px, 1.9vw, 22px) !important; line-height: 1.3 !important; text-transform: uppercase; }
+.strumento h3 { font-size: clamp(18px, 2vw, 24px) !important; line-height: 1.25 !important; }
+.galleria strong { font-size: 17px !important; line-height: 1.3 !important; text-transform: uppercase; }
+.passo legend { font-size: clamp(18px, 2.2vw, 22px) !important; text-transform: uppercase; }
+.listino .gruppo th { font-size: 15px !important; text-transform: uppercase; }
+.incluso .cifra { font-size: clamp(38px, 6.5vw, 64px) !important; }
+.esito .grande { color: #F0583E !important; font-size: clamp(30px, 4.2vw, 46px) !important; }
+.logo { text-transform: uppercase; font-size: 15px !important; } .logo span { color: var(--testo) !important; }
+.logo::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #E8402A; margin-right: 8px; vertical-align: 1px; }
+.hero { background-image: none !important; }
+.pillola, .scheda[aria-selected="true"] { color: #121114 !important; font-weight: 600; }
+.pillola:hover { background: #F0583E !important; }
+.barra { background: rgba(18, 17, 20, .8) !important; }
+.scena { background: #121114 url(media/apertura.webp) center bottom / cover no-repeat !important; }
+.scena::before { background: linear-gradient(180deg, rgba(18,17,20,.6) 0%, rgba(18,17,20,0) 100%) !important; }
+.schermo { background: linear-gradient(180deg, #19171A 0%, #2A1614 55%, #7A1F18 100%) !important; }
+.telefono-corpo { background: #0C0B0D !important; }
+.tessera .oggetto, .strumenti-oggetto { filter: hue-rotate(186deg) saturate(2.2) brightness(1.1) !important; }
+.tessera, .galleria li, .conti, .pannello, .invito { box-shadow: inset 0 0 0 1px rgba(237, 232, 227, .06) !important; }
+@media (hover: hover) { .tessera:hover, .galleria li:hover { box-shadow: inset 0 0 0 1px rgba(232, 64, 42, .55), 0 24px 50px -28px rgba(224, 42, 28, .7) !important; } }
+.tessera .novita { background: #E8402A !important; color: #121114 !important; }
+.m-copertina, .m-tessera, .m-reel { background: linear-gradient(135deg, #1B191C, #7A1F18 55%, #E8402A) !important; }
+.m-bollini i.pieno, .m-grafico i:last-child, .m-lato i:first-child { background: #E8402A !important; }
+.incluso { background: radial-gradient(120% 140% at 100% 100%, #F2843F 0%, #E8402A 20%, #9A1410 44%, #2A1010 70%, #121114 100%) !important; }
+.campo-s input[type="range"] { accent-color: #E8402A !important; }
+.colori label:has(input:checked) { box-shadow: inset 0 0 0 1.5px #E8402A !important; }
+.scelta:has(input:checked), .stima-pacchetto { background: rgba(232, 64, 42, .14) !important; }
+:root { --ui-azzurro: #C8361F; }
+.m-chips em { background: #FBE4DE !important; color: #9A2A18 !important; }
+.cta-mobile { display: none; }
+/* garanzie sotto i pulsanti */
+.garanzie { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 14px; margin-top: 26px; }
+.garanzie li { display: grid; gap: 2px; text-align: left; font-size: 13px; color: var(--grigio); padding: 10px 16px 10px 14px; border-radius: 14px; background: var(--tessera); box-shadow: inset 0 0 0 1px rgba(237, 232, 227, .06); border-left: 2px solid #E8402A; }
+.garanzie b { color: var(--testo); font-weight: 600; font-size: 14px; }
+/* invito dopo i lavori */
+.invito { margin-top: clamp(28px, 4vw, 48px); border-radius: 28px; padding: clamp(24px, 4vw, 44px); text-align: center; background: radial-gradient(90% 160% at 50% 130%, rgba(232, 64, 42, .55) 0%, rgba(154, 20, 16, .25) 40%, transparent 72%), var(--tessera); }
+.invito-titolo { font-size: clamp(20px, 3vw, 32px); text-transform: uppercase; color: var(--testo); }
+.invito p + p { margin: 12px auto 0; max-width: 34em; color: var(--grigio); }
+.invito .azioni { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px 28px; margin-top: 22px; }
+@media (max-width: 640px) {
+  .scena { background: #121114 url(media/apertura-mobile.webp) center top / 150% auto no-repeat !important; }
+  .cta-mobile { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 29; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(18, 17, 20, .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--linea); }
+  .cta-mobile .pillola, .cta-mobile .cta-wa { flex: 1; text-align: center; padding: 12px 14px; border-radius: 980px; font-weight: 600; }
+  .cta-mobile .cta-wa { background: var(--verde-wa); color: #fff; }
+  .wa-fisso { display: none; }
+  .garanzie li { flex: 1 1 100%; }
+}
 </style>
 </head>
 
@@ -954,9 +1025,13 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
         <a class="pillola" href="#preventivo">Chiedi la bozza gratuita</a>
         <a class="freccia" href="#prezzi">Guarda i prezzi</a>
       </div>
+      <ul class="garanzie" aria-label="Le nostre garanzie">
+        <li><b>Bozza gratuita</b>La vedi prima di decidere</li>
+        <li><b>Prezzo fisso</b>IVA inclusa, scritto nel preventivo</li>
+        <li><b>Zero rischi</b>Se non ti convince, non ci devi niente</li>
+      </ul>
 
       <div class="scena">
-        <video class="scena-video" aria-hidden="true" muted playsinline preload="auto" poster="media/hero.webp"><source src="media/alba-mobile.mp4" type="video/mp4" media="(max-width: 640px)"><source src="media/alba.mp4" type="video/mp4"></video>
         <figure class="telefono" aria-label="Esempio: le notifiche che trovi al mattino sul telefono">
           <div class="telefono-corpo">
             <div class="schermo">
@@ -1262,7 +1337,6 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
   </section>
 
   <!-- ===== Lavori ===== -->
-  <!-- Matt: se mi mandi gli screenshot dei siti li metto dentro ogni tessera. -->
   <section class="sezione" id="lavori" aria-labelledby="t-lavori">
     <div class="wrap">
       <div class="testa">
@@ -1279,6 +1353,16 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
       <li><img class="anteprima" src="media/lavori/mood.webp" alt="Il sito di Mood Collection Privèe su smartphone" width="600" height="500" loading="lazy" decoding="async"><span class="settore">Moda</span><strong>Mood Collection Privèe</strong><span class="fatto">Negozio online con grafica su misura.</span><a class="freccia visita" href="https://moodcollection-privee.it" target="_blank" rel="noopener">Guarda il sito</a></li>
       <li><img class="anteprima" src="media/lavori/emme.webp" alt="Il sito di EMME Print su smartphone" width="600" height="500" loading="lazy" decoding="async"><span class="settore">Tipografia</span><strong>EMME Print</strong><span class="fatto">Sito con catalogo e contatto WhatsApp su ogni prodotto.</span><a class="freccia visita" href="https://emmeprintnapoli.com" target="_blank" rel="noopener">Guarda il sito</a></li>
     </ul>
+    <div class="wrap">
+      <div class="invito">
+        <p class="invito-titolo">Il prossimo può essere il tuo.</p>
+        <p>Raccontaci la tua attività: in pochi giorni ti mostriamo, gratis, la bozza della tua home.</p>
+        <div class="azioni">
+          <a class="pillola" href="#preventivo">Chiedi la bozza gratuita</a>
+          <a class="freccia" data-wa href="https://wa.me/393471903026?text=Ciao%2021Labs!%20Vorrei%20la%20bozza%20gratuita%20del%20mio%20sito.">Scrivici su WhatsApp</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ===== Prezzi ===== -->
@@ -1533,7 +1617,7 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
           <p>Sito o e-commerce, gestionale su misura e due automazioni. Un solo preventivo, un solo referente, e risparmi fino a 600&nbsp;€ rispetto ai prezzi singoli.</p>
         </div>
         <div>
-          <p class="cifra">2.490&nbsp;€</p>
+          <p class="cifra">2.490&nbsp;<span class="eur">€</span></p>
           <p class="cifra-nota">Una tantum, IVA inclusa. Manutenzione annuale come da listino.</p>
           <a class="pillola bianca" data-wa href="https://wa.me/393471903026?text=Ciao%2021Labs%2C%20vorrei%20la%20bozza%20gratuita%20del%20Tutto%20incluso.">Chiedi la bozza su WhatsApp</a>
         </div>
@@ -1646,6 +1730,10 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
         <details>
           <summary><h3>Quanto costa un gestionale su misura?</h3></summary>
           <p>Un gestionale su misura parte da 1.500 € una tantum, IVA inclusa, più 190 € l'anno di manutenzione. Il prezzo esatto dipende dai moduli che scegli: clienti, ordini, magazzino, appuntamenti, preventivi.</p>
+        </details>
+        <details>
+          <summary><h3>Cos'è il centralino IA?</h3></summary>
+          <p>È un assistente con intelligenza artificiale che risponde al telefono al posto tuo quando sei occupato o chiuso: dà orari e informazioni, prende prenotazioni e appuntamenti e ti manda su WhatsApp il riepilogo di ogni chiamata. Parte da 120 € al mese.</p>
         </details>
         <details>
           <summary><h3>Cosa sono le automazioni per un'azienda?</h3></summary>
@@ -2119,5 +2207,9 @@ h1, h2, h3, .motto, .galleria strong, .incluso .cifra, .passo legend, .listino .
   });
 })();
 </script>
+<div class="cta-mobile" aria-label="Contatto rapido">
+  <a class="pillola" href="#preventivo">Bozza gratuita</a>
+  <a class="cta-wa" data-wa href="https://wa.me/393471903026?text=Ciao%2021Labs!%20Vorrei%20la%20bozza%20gratuita%20del%20mio%20sito.">WhatsApp</a>
+</div>
 </body>
 </html>
